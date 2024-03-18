@@ -1,14 +1,26 @@
 # DevOps-Project-Management-Terraform
 
--- Initialize Terraform
-terraform init -upgrade
+## Initialize Terraform
 
--- Create a Terraform execution plan
+```bash
+  terraform init -upgrade
+```
+
+## Create a Terraform execution plan
+
+```bash
 terraform plan -out main.tfplan
+```
 
--- Apply a Terraform execution plan
+## Apply a Terraform execution plan
+
+```bash
 terraform apply main.tfplan
+```
 
--- Clean up resources
+## Clean up resources
+
+```bash
 terraform plan -destroy -out main.destroy.tfplan
 terraform apply main.destroy.tfplan
+```
